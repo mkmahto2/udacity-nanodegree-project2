@@ -1,7 +1,7 @@
-# udacity-nanodegree-project2
+##### udacity-nanodegree-project2
 Udacity-nanodegree-project2
 
-Project 2 - Deploy a high-availability web app using CloudFormation = Deploy Infrastructure as Code (IaC)
+###Project 2 - Deploy a high-availability web app using CloudFormation = Deploy Infrastructure as Code (IaC)
 
 To spin up a new stack you can run the create.sh followed by the stack name.
 PROJECT SPECIFICATION:
@@ -14,14 +14,14 @@ There will be two parts to this project:
 
 You'll first develop a diagram that you can present as part of your portfolio and as a visual aid to understand the CloudFormation script. The second part is to interpret the instructions as well as your own diagram and create a matching CloudFormation script.
 
-Problem
+##$Problem
 Your company is creating an Instagram clone called Udagram. Developers pushed the latest version of their code in a zip file located in a public S3 Bucket.
 
 You have been tasked with deploying the application, along with the necessary supporting software into its matching infrastructure.
 
 This needs to be done in an automated fashion so that the infrastructure can be discarded as soon as the testing team finishes their tests and gathers their results.
 
-Project Requirements
+##Project Requirements
 Server spec
 You'll need to create a Launch Configuration for your application servers in order to deploy four servers, two located in each of your private subnets. The launch configuration will be used by an auto-scaling group.
 
@@ -40,7 +40,7 @@ One of the output exports of the CloudFormation script should be the public URL 
 
 Bonus points if you add http:// in front of the load balancer DNS Name in the output, for convenience.
 
-Other Considerations
+##Other Considerations
 You can deploy your servers with an SSH Key into Public subnets while you are creating the script. This helps with troubleshooting. Once done, move them to your private subnets and remove the SSH Key from your Launch Configuration.
 
 It also helps to test directly, without the load balancer. Once you are confident that your server is behaving correctly, increase the instance count and add the load balancer to your script.
